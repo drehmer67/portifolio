@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="glow"></div>
+<canvas id="bg"></canvas>
+
+<header>
+  <h2>Drehmer Dev</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projetos.html">Projetos</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Construindo Sistemas</h1>
+  <p>Interfaces modernas e experiências únicas</p>
+  <button class="btn" onclick="scrollToProj()">Ver Projetos</button>
+</section>
+
+<section class="sobre">
+  <div class="sobre-container">
+
+    <div class="sobre-texto">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou desenvolvedor focado em criar sistemas modernos e funcionais,
+        com experiência em projetos como sistemas de agendamento, lojas online
+        e aplicações web completas.
+      </p>
+
+      <p>
+        Trabalho com tecnologias como HTML, CSS, JavaScript e Python,
+        sempre buscando performance, design moderno e boa experiência do usuário.
+      </p>
+
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+      </div>
+    </div>
+
+    <div class="sobre-img">
+      <img src="https://via.placeholder.com/250" alt="Minha foto">
+    </div>
+
+  </div>
+</section>
+
+<section id="projetos" class="section">
+  <h2>Projetos</h2>
+
+  <div class="cards">
+
+    <div class="card" onclick="abrirProjeto('barbearia')">
+      <h3>Barbearia</h3>
+      <p>Sistema completo</p>
+    </div>
+
+    <div class="card" onclick="abrirProjeto('loja')">
+      <h3>Loja</h3>
+      <p>Ecommerce com carrinho</p>
+    </div>
+
+    <div class="card" onclick="abrirProjeto('lancheria')">
+      <h3>Lancheria</h3>
+      <p>Pedidos online</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contato">
+  <h2>Contato</h2>
+  <p>Quer trabalhar comigo ou tirar uma ideia do papel? Me chama 👇</p>
+
+  <div class="contato-container">
+
+    <a href="mailto:seuemail@email.com" class="contato-card">
+      📧 Email
+    </a>
+
+    <a href="https://wa.me/5551994781654" target="_blank" class="contato-card">
+      💬 WhatsApp
+    </a>
+
+    <a href="https://github.com/drehmer67" target="_blank" class="contato-card">
+      💻 GitHub
+    </a>
+
+  </div>
+</section>
+
+<section class="hero reveal">
+<section class="section reveal">
+<section class="sobre reveal">
+<section class="contato reveal">
+
+<script src="js/script.js"></script>
+</body>
+</html>
