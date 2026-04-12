@@ -99,3 +99,19 @@ document.addEventListener("mousemove", (e) => {
     card.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
   });
 });
+document.querySelectorAll(".carousel").forEach(carousel => {
+  const images = carousel.querySelector(".carousel-images");
+  const imgs = images.querySelectorAll("img");
+
+  let index = 0;
+
+  carousel.querySelector(".next").onclick = () => {
+    index = (index + 1) % imgs.length;
+    images.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  carousel.querySelector(".prev").onclick = () => {
+    index = (index - 1 + imgs.length) % imgs.length;
+    images.style.transform = `translateX(-${index * 100}%)`;
+  };
+});
